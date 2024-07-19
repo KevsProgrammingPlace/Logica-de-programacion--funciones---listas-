@@ -1,5 +1,5 @@
 let numeroSecreto = generarNumeroSecreto();
-console.log(numeroSecreto);
+
 
 let parrafo = document.querySelector('p');
 parrafo.innerHTML = 'Indica un número del 1 al 10';
@@ -10,8 +10,13 @@ function asignarTextoElemento(elemento, texto) {
     return;
 }
 
-function intentoDeUsuario(){
-    console.log("Click");
+function verificarIntento(){
+    //captura lo que el usuario escriba
+    let numeroUsuario = document.getElementById(parseInt('valorUsuario')).value;
+    console.log(typeof(numeroDeUsuario));
+    console.log(numeroSecreto);
+    console.log(numeroUsuario);
+    console.log(numeroUsuario == numeroSecreto);
     return;
 }
 
