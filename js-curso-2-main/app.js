@@ -42,5 +42,5 @@ function cuartoBoton(){
     let numero2= parseInt(prompt("ingresa otro numero"));
     let resultado = numero1 + numero2;
     alert(`${numero1}+${numero2}=${resultado}`);
-
 }
+//====================================================================================================================//
