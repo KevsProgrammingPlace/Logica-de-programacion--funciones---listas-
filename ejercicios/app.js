@@ -45,9 +45,46 @@ function multiplicarNumero(num1){
 }
 
 //====================================================================================================================//
+//EJERCICIO14
+//Crea una función que calcule el índice de masa corporal 
+//(IMC) de una persona a partir de su altura en metros y peso en kilogramos, que se recibirán como parámetros.
+function calcularIMC(altura, peso) {
+    let resultado = peso / (altura ** 2);
+    if (resultado > 30) {
+        console.log(`Su IMC es de ${resultado.toFixed(2)} (obesidad)`);
+    } else if (resultado > 25.0) {
+        console.log(`Su IMC es de ${resultado.toFixed(2)} (peso superior al normal)`);
+    } else if (resultado >= 18.5) {
+        console.log(`Su IMC es de ${resultado.toFixed(2)} (normal)`);
+    } else if (resultado < 18.5) {
+        console.log(`Su IMC es de ${resultado.toFixed(2)} (peso inferior al normal)`);
+    }
+}
+//====================================================================================================================//
+//EJERCICIO15
+//Crea una función que calcule el valor del factorial de un número pasado como parámetro
+function factorial(n) {
+    if (n < 0){
+        console.log("El factorial no funciona con valores negativos") ;
+    } 
+    let resultado = 1;
+    for (let i = 1; i <= n; i++) {
+        resultado *= i;
+    }
+    console.log(resultado);
+}
+
+
+
+
+
 helloWorld();
 saludarPersona("Kevin");
 multiplicarNumero(10);
 promedioNumeros(9,10,15);
 elMayorDeTodos(20,20)
 multiplicarNumero(9);
+calcularIMC(1.80,88)
+factorial(5);
+//====================================================================================================================//
+
